@@ -1,1 +1,2 @@
 # SSBM-Combo-Prediction-GRU
+A GRU that processes frame data from super smash brothers melee to make predictions as to whether a combo will continue, frame-by-frame. create_datasets.py will take .slp files, extract the combos, and build training/test sets by sampling from the combos according to a (simulated) poisson process within the valid region of the model. train_combo_gru is the main training algorithm that defines the GRU and runs the training loop. 
